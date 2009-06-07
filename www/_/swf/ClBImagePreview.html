@@ -1,0 +1,80 @@
+<!-- saved from url=(0014)about:internet -->
+<html lang="en">
+
+<!-- 
+Smart developers always View Source. 
+
+This application was built using Adobe Flex, an open source framework
+for building rich Internet applications that get delivered via the
+Flash Player or to desktops via Adobe AIR. 
+
+Learn more about Flex at http://flex.org 
+// -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!--  BEGIN Browser History required section -->
+<link rel="stylesheet" type="text/css" href="history/history.css" />
+<!--  END Browser History required section -->
+
+<title></title>
+<script src="AC_OETags.js" language="javascript"></script>
+
+<!--  BEGIN Browser History required section -->
+<script src="history/history.js" language="javascript"></script>
+<!--  END Browser History required section -->
+
+<style>
+body { margin: 0px; overflow:hidden }
+</style>
+<script language="JavaScript" type="text/javascript">
+<!--
+// -----------------------------------------------------------------------------
+// Globals
+// Major version of Flash required
+var requiredMajorVersion = 9;
+// Minor version of Flash required
+var requiredMinorVersion = 0;
+// Minor version of Flash required
+var requiredRevision = 28;
+// -----------------------------------------------------------------------------
+// -->
+</script>
+</head>
+
+<body scroll="no">
+
+<script language="JavaScript" type="text/javascript">
+
+    function getFlashMovie (movieName) {
+      var isIE = navigator.appName.indexOf("Microsoft") != -1;
+      var m = (isIE) ? window["ClBImagePreview"] : document["ClBImagePreview"];
+      return m;
+    }
+
+    function ready ()
+    {
+        alert ("ready to go" + clUrls);
+        getFlashMovie ().hello ("hey hey");
+        getFlashMovie ().getImages (clUrls);
+    }
+
+    var clUrls = ['http://newyork.craigslist.org/mnh/car/687591954.html', 'http://newyork.craigslist.org/lgi/car/687588907.html'];
+	AC_FL_RunContent(
+			"src", "ClBImagePreview",
+			"width", "50",
+			"height", "50",
+			"align", "middle",
+			"id", "ClBImagePreview",
+			"quality", "high",
+			"bgcolor", "#008000",
+			"name", "ClBImagePreview",
+			"allowScriptAccess","sameDomain",
+			"type", "application/x-shockwave-flash",
+			"pluginspage", "http://www.adobe.com/go/getflashplayer"
+	);
+</script>
+
+</body>
+</html>

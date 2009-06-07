@@ -1,0 +1,6 @@
+<?
+	class Duckk_Action
+	{
+		
+	}
+?>

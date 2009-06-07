@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+
+DIV#mainSearch {
+    margin-top: 25px;
+}
+
+DIV#mainSearch DIV.layout DIV.frm INPUT.btn {
+    font-size: 180%;
+    font-weight: bold;
+}
+
+
+DIV.homeBg {
+    margin-top: 25px;
+}
+
+DIV.homeBg DIV.frm FORM INPUT.btn {
+    font-size: 200%;
+}
+
+DIV.homeBg DIV.frm FORM INPUT {
+    font-weight: bold;    
+}
+
+/****** search frame *****/
+
+DIV.fs DIV.frm {
+    margin-top: 0px;
+}
+
+DIV.fs DIV.frm IMG {
+    margin-bottom: 1px;
+    margin-top: 0px;
+}
+
+DIV.fs DIV.frm INPUT.txt {
+    font-size: 200%;
+    font-weight: bold;    
+    margin-bottom: 1px;
+}
+
+DIV.fs DIV.frm INPUT.btn {
+    font-size: 170%;
+    font-weight: bold;    
+}
+
+DIV.fs DIV.frm {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 400px;
+}
+
+DIV.fs DIV.frm FORM {
+    margin: 0px;
+    padding: 0px;
+}
+
+DIV.fs DIV.resInfo {
+    width: 332px;
+}
+
+DIV.fs DIV.resInfo P {
+    margin-top: 5px;
+}

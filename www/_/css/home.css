@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+H2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 200%;
+}
+
+DIV.sitemap {
+    margin-left:5px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+DIV#footer {
+    margin-top: 20px;
+}

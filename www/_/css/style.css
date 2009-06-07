@@ -1,0 +1,457 @@
+@CHARSET "UTF-8";
+
+BODY, DIV, P, SPAN, A, STRONG {
+    font-size: 90%;
+    font-family: Verdana;
+}
+
+BODY {
+    background-color: white;
+    text-align: center;
+}
+
+DIV#content {
+    width: 786px;
+    margin: 0px auto;
+    margin-top: 20px;
+    text-align: left;
+}
+
+DIV.text,
+DIV.text A {
+    font-size: 14px;
+}
+
+DIV.text P {
+    margin-bottom: 20px;
+}
+
+IMG {
+    border: 0px;    
+}
+
+.bold {
+    font-weight: bold;    
+}
+
+H1 {
+    font-size: 285%;
+    margin-bottom: 2px;
+    padding-bottom: 0px;
+    font-family: Arial;
+}
+
+H2 {
+    font-size: 120%;
+    margin: 0;
+    padding: 3px;
+    color: #444; 
+}
+
+H3 {
+    font-size: 190%;
+    color: #666;
+    margin-top: 0px;
+}
+
+A {
+    color: blue;
+}
+
+A:visited {
+    color: purple;
+}
+
+.clear {
+    clear: both;
+}
+
+.center {
+    text-align: center;    
+}
+
+/************************** H stuff **************************/
+DIV#h2 {
+    border: 1px solid #d8d7d7;
+    background-color: #f1efef;
+    margin-bottom: 20px;
+}
+
+DIV#h2 SPAN {
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+
+/************************** SEARCH **************************/
+DIV#mainSearch {
+    background-color: grey;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    clear: both;
+    background: url(/_/images/bg/searchBar.gif) no-repeat;
+    width: 786px;
+    height: 84px;
+}
+
+DIV#mainSearch FORM {
+    margin: 0px;
+    padding: 0px;
+}
+
+DIV#mainSearch DIV.layout {
+    margin: 5px;
+    margin-left: 45px;
+}
+
+DIV#mainSearch DIV.layout DIV {
+    float: left;
+}
+
+DIV#mainSearch DIV.layout DIV.txt {
+    margin-top: 25px;  
+    margin-left: 8px;  
+}
+
+
+DIV#mainSearch DIV.layout DIV.txt STRONG {
+    display: block;
+    font-size: 135%;
+    font-family: Georgia, Arial, Serif;
+    margin-top: 2px;
+}
+
+DIV#mainSearch DIV.layout DIV.txt STRONG A:visited,
+DIV#mainSearch DIV.layout DIV.txt STRONG A {
+    font-family: Georgia, Arial, Serif;
+    font-size: 100%;
+    color: black;
+}
+
+DIV#mainSearch DIV.layout DIV.txt STRONG A:hover {
+    color: #444;
+}
+    
+
+DIV#mainSearch DIV.layout DIV.options {
+    margin-top: 22px;
+    margin-left: 20px;    
+}
+
+DIV#mainSearch DIV.layout DIV.options A {
+    font-size: 110%;
+    display: block;
+    margin-bottom: 3px;
+    color: blue;
+}
+
+DIV#mainSearch DIV.layout DIV.frm {
+    margin-top: 22px;
+    margin-left: 40px;    
+}
+
+DIV#mainSearch DIV.layout DIV.frm P {
+    margin-top: 3px;
+    font-family: Verdana;
+    font-size: 105%;
+    color: #333;
+}
+
+DIV#mainSearch DIV.layout DIV.frm P A {
+    font-size: 105%;
+    color: blue;
+}
+    
+DIV#mainSearch DIV.layout DIV.frm INPUT {
+    font-size: 190%;
+}
+
+DIV#mainSearch DIV.layout DIV.frm INPUT.txt {
+    width: 280px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+/************************** NAV **************************/
+DIV#nav {
+    
+}
+
+DIV#nav DIV.navLinks {
+    margin-left: 2px;
+    float: left;
+}
+
+DIV#nav DIV.userLinks {
+    width: 130px;
+    float: left;
+    margin-right: 2px;
+}
+
+DIV#nav DIV.navLinks A {
+    color: blue;
+}
+    
+
+DIV#nav DIV.navLinks SPAN,
+DIV#nav DIV.navLinks A {
+    font-size: 92%;
+    margin-right: 7px;
+}
+
+DIV#nav DIV.navLinks SPAN {
+    font-weight: bold;
+}
+
+DIV#nav DIV.userLinks {
+    float: right;
+    text-align: right;    
+}
+
+DIV#nav DIV.userLinks A {
+    font-size: 92%;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+
+/************************** SEARCH RESULTS **************************/
+DIV.result {
+    margin-bottom: 10px;
+}
+
+DIV.result DIV.heading {
+    font-size: 168%;
+    margin-bottom: 3px;
+}
+
+DIV.result DIV.heading A.money:visited,
+DIV.result DIV.heading A.money {
+    color: green;
+    text-decoration: none;
+}
+
+DIV.result DIV.details,
+DIV.result DIV.description {
+    font-size: 110%;
+}
+
+DIV.result DIV.description DIV.thumb {
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    margin: 2px 8px 3px 0px;
+    float: left;    
+}
+
+DIV.result DIV.description DIV.thumb IMG {
+    width: 75px;
+}
+
+DIV.result DIV.details {
+    margin-bottom: 3px;
+}
+
+DIV.result DIV.details B {
+    font-size: 110%;
+}
+
+DIV.sortBar SELECT {
+    font-size: 80%;
+}
+
+DIV.resultsFoundIn {
+    margin: 15px 0;    
+}
+
+DIV#loading {
+    display: none;
+    margin: auto;
+    text-align: center;
+    width: 700px;    
+    font-size: 100%;
+}
+
+/************************** tagCloud **************************/
+DIV.tagCloud {
+    text-align: center;
+    font-size: 120%;
+}
+
+DIV.tagCloud A {
+    text-decoration: none;
+    margin: 3px;
+    display: block;
+}
+
+DIV.tagCloud A:hover {
+    text-decoration: underline;
+}
+
+DIV.tagCloud A.tc0 {
+    color: #b5c4df;
+}
+
+DIV.tagCloud A.tc1 {
+    color: #4779c4;
+}
+
+DIV.tagCloud A.tc2 {
+    color: #bbb;
+}
+
+DIV.tagCloud A.tc3 {
+    color: #ede256;
+}
+
+/************************** COLUMNS **************************/
+DIV.col1,
+DIV.col2 {
+    float: left;
+}
+
+DIV.col1 {
+    width: 550px;
+    margin-right: 15px;
+    padding-right: 35px;
+    border-right: 1px solid #f1efef;
+    font-size: 95%;
+}
+
+DIV.col2 {
+    width: 180px;
+}
+
+/************************** PAGINATION **************************/
+DIV.paginationInfo {
+    font-size: 130%;
+    margin-bottom: 20px;
+}
+
+DIV.pagination {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 140%;
+    font-weight: bold;
+}
+
+DIV.pagination A,
+DIV.pagination SPAN {
+    margin: 0px 10px;
+}
+
+DIV.pagination A.arrow {
+    text-decoration: none;
+}
+
+
+/************************** PAGINATION **************************/
+DIV.homeBg {
+    background: url(/_/images/bg/homepage.gif) no-repeat;
+    width: 786px;
+    height: 274px;
+    margin-top: 10px;
+}
+
+DIV.homeBg DIV.frm {
+    float: left;
+    margin-top: 90px;
+    margin-left: 285px;
+}
+
+DIV.homeBg DIV.frm FORM INPUT,
+    DIV.homeBg DIV.frm FORM BUTTON {
+    font-size: 250%;
+    height: 36px;
+    float: left;
+    margin-left: 4px;
+}
+
+DIV.homeBg DIV.frm FORM INPUT.txt {
+    width: 350px;
+    margin: 0;
+}
+
+BUTTON.homeSearch {
+    background-image: url(/_/images/buttons/homeSearch.jpg);
+    height: 36px;
+    width: 97px;
+    border: 0px;
+}
+
+/************************** FOOTER **************************/
+DIV#footer {
+    margin-top: 15px;
+    padding-top: 10px;
+    color: #666;
+    font-size: 11px;
+    border-top: 1px solid #ddd;
+}
+
+DIV#footer SPAN {
+    margin-top: 0px;
+    float: right;
+}
+
+DIV#footer A,
+DIV#footer A:visited {
+    margin-right: 8px;
+    color: #666;
+}
+
+DIV.faq DIV {
+    margin-bottom: 20px;
+}
+
+DIV.faq P SPAN {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+
+/************************** SITEMAP **************************/
+DIV.sitemap DIV {
+    width: 155px;
+    float: left;
+}
+
+DIV.sitemap DIV SPAN {
+    display: block;
+    font-size: 100%;
+}
+
+DIV.sitemap DIV SPAN A {
+    font-size: 132%;
+}
+
+/************************** ERRORS **************************/
+DIV.error {
+    margin-top:25;
+    margin-bottom: 25px;
+    font-size: 110%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+DIV.error A {
+    font-size: 110%;
+    color: blue;
+}
+
+DIV.searchError {
+    margin-bottom: 25px;
+    font-size: 100%;
+    padding: 10px;
+    border: 1px solid #d8d7d7;
+    background-color: #f8f8f8;
+    color: #B52526;
+    font-weight: bold;
+}
+
+DIV.searchError LI {
+    color: black;
+    font-weight: 200;
+}

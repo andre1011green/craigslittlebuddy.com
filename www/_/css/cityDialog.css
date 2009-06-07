@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+DIV#cityDialog {
+    width: 666px;
+    font-size: 100%;
+}
+
+DIV.controls A {
+    font-size: 115%;
+}
+
+DIV.cityHolder {
+    height: 400px;
+    overflow: auto;
+}
+
+DIV.dialogCity {
+    float: left;
+    margin-right: 10px;
+    width: 30%;
+}
+
+DIV.dialogCity LABEL {
+    font-size: 128%;
+}
+
+SPAN.button-group SPAN#yui-gen0 SPAN.first-child BUTTON,
+SPAN.button-group SPAN#yui-gen1 SPAN.first-child BUTTON,
+SPAN.button-group SPAN#yui-gen2 SPAN.first-child BUTTON {
+    font-size: 120%;
+    font-weight: bold;
+}

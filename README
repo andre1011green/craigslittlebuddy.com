@@ -1,0 +1,83 @@
+Here's the all source to craigslittlebuddy.com. 
+
+craigslittlebuddy.com was a simple site that allowed you
+to search the classified sections of multiple craigslist locations at the same time.
+
+The site was originally intended to help my guitar-nerd friends find good deals. A ton of folks I know
+are fanatics for specific guitars and buy as many as they can find (http://tinyurl.com/mrkesd for example).
+So these dudes search the instrument classifieds of a dozen or so different CL locations, multiple times a day
+hoping to see if anything new's popped up. "Well, that's annoying." I thought. I knew CL had rss feeds for 
+search so "why not hack together a site that hits those RSS URLs and combines the results.". That's 
+why I built the site (eventually I added all the other classified sections). It's not rocket science, 
+took a about day to toss together (the code is just a giant, crappy hack) but it saved my buddies a ton 
+of time. All it cost me was a day and $50 for the graphics.
+
+This site was running for quite a while and all of a sudden craigslist banned my host's IP from accessing
+their search results. So figured "eh fuck it" & I gave up assuming i was hosed for good but a few weeks later 
+a user emailed me saying that the site had magically started working again (they un-banned my IP). sweet!
+To midigate getting banned again I dramatically decreased how often I hit craigslist for search results 
+(increased cache time from 30 min to 6 hours) but was didn't cut it &eventually I got banned again.
+
+Dealing w/ CL is a losing battle... But at the same time people were getting value from the site (I got a ton of from folks 
+saying how much the site's decreased their "hunting" time). It sucks to leave people high and dry...
+
+So, fuck it - here's the code: 
+go ahead and run it on your home machine for your own personal use. 
+if you're motivated enough to get it working then have at it.
+
+-Arin
+
+------------- INSTALLATION & CONFIG -----------------
+You need PHP & Apache running on your home machine.
+For windows read: http://www.apachefriends.org/en/xampp-windows.html
+For Mac: http://foundationphp.com/tutorials/php_leopard.php
+For Linux: I assume you know what you're doing if you're using Linux
+
+Google for more help ;-)
+
+... And Don't forget to enable mod_rewrite
+
+You need an apache virtual host to run this site. Below there's an example of an apache virtual host config
+that uses name a based virtual host.
+
+A couple notes:
+I've always had this in the main apache conf. NEVER in a .htaccess file. So I can't guarantee that 
+the mod_rewrite rules work in a .htaccess file
+
+Also check out the index.php file. You'll see 2 constants there that you'll care about...
+
+MAGPIE_CACHE_DIR: where to cache the rss that's fetched from craigslist
+MAGPIE_CACHE_AGE: how long to cache the RSS.
+
+
+------------- APACHE CONFIG-----------------
+
+# might need the following NameVirtualHost line in your apache conf file if
+# you don't already have named virtual hosts enabled
+#
+# NameVirtualHost *:80
+
+<VirtualHost *:80>
+	# set DocumentRoot to the www sub-folder
+    DocumentRoot /<the>/<path>/<on>/<your>/<machine>/<to>/craigslittlebuddy.com/www
+
+	# adjust the following 2 to the domain name you want to use
+	# you will need to enter this domain name in your hosts file
+	#   (example)
+	#   127.0.0.1    craigslittlebuddy.local
+	#
+	#   mac help: http://kb.wisc.edu/middleware/page.php?id=4506
+	#   windows help: http://www.enterprisenetworkingplanet.com/netsysm/article.php/991281
+    ServerName craigslittlebuddy.local
+    ServerAlias craigslittlebuddy.local   
+
+	# you MUST have mod_rewrite enabled along w/ these rules	
+    RewriteEngine On
+    
+    RewriteRule ^/_(.*)  /_$1 [L]
+        RewriteRule ^/favicon.ico  /favicon.ico [L]
+        RewriteRule ^/gsitemap.xml  /gsitemap.xml [L]
+        RewriteRule ^/robots.txt /robots.txt [L]
+        RewriteRule ^/__(.*)  /__$1 [L]
+        RewriteRule .* /index.php    
+</VirtualHost>

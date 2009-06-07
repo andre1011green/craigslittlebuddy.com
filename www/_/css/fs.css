@@ -1,0 +1,92 @@
+@CHARSET "UTF-8";
+
+BODY {
+    text-align: center;
+    background-color: #b8ccef;
+    margin: 5px;
+}
+
+DIV#content {
+    margin-top: 0px;
+}
+
+DIV.fs {
+    width: 920px;
+    margin-top: 0px;
+    overflow: hidden;
+}
+
+DIV.dude {
+    margin-top: 12px;
+}
+
+DIV.l {
+    float: left;
+    height: 75px;
+}
+
+DIV.frm INPUT.txt {
+    font-size: 190%;
+    width: 270px;
+}
+
+DIV.frm INPUT.btn {
+    font-size: 200%;
+}
+
+DIV.frm IMG {
+    margin-bottom: 4px;
+    margin-top: 5px;
+}
+
+DIV.fs DIV.frm {
+    padding-top: 12px;
+    margin-left: 10px;
+    width: 380px;
+}
+
+DIV.fs DIV.resInfo {
+    text-align: right;
+    font-size: 150%;
+    margin-top: 3px;
+    float: left;   
+    width: 350px;
+    margin-left: 10px;
+}
+
+DIV.fs DIV.resInfo P {
+    font-size: 12px;
+    margin: 0px;
+    margin-bottom: 3px; 
+}
+
+DIV.fs DIV.resInfo A {
+    font-weight: bold;
+    font-size: 90%;
+    text-decoration: none;   
+}
+
+DIV.fs DIV.resInfo A IMG {
+    border: 1px solid #2f5fe7;
+}
+
+DIV.fs DIV.resInfo A:visited IMG {
+    border: 1px solid #862fe7;
+} 
+
+SPAN.bread {
+    float: right;
+    margin-top: 12px;
+    font-size: 10px;
+    font-weight: 0;
+}
+
+SPAN.bread A {
+    color: #333;
+    font-size: 10px;
+    font-weight: 0;
+}
+
+DIV.sm {
+    display: none;
+}

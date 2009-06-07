@@ -40,7 +40,7 @@
         </p>
         
         <p>
-            So, it's time to day good-bye... but, I'm not gonna leave you hanging. As a parting gift I'm leaving you with all the code
+            So, it's time to say good-bye... but, I'm not gonna leave you hanging. As a parting gift I'm leaving you with all the code
             for this site. It's hacky & crappy but it works. So, go ahead and run the site at home, on your personal machine, for your own personal use.
         </p>
         

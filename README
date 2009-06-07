@@ -18,8 +18,7 @@ a user emailed me saying that the site had magically started working again (they
 To midigate getting banned again I dramatically decreased how often I hit craigslist for search results 
 (increased cache time from 30 min to 6 hours) but was didn't cut it &eventually I got banned again.
 
-Dealing w/ CL is a losing battle... But at the same time people were getting value from the site (I got a ton of from folks 
-saying how much the site's decreased their "hunting" time). It sucks to leave people high and dry...
+Dealing w/ CL is a losing battle... But at the same time people were getting value from the site (I got a ton of from folks saying how much the site's decreased their "hunting" time). It sucks to leave people high and dry...
 
 So, fuck it - here's the code: 
 go ahead and run it on your home machine for your own personal use. 
@@ -75,9 +74,9 @@ MAGPIE_CACHE_AGE: how long to cache the RSS.
     RewriteEngine On
     
     RewriteRule ^/_(.*)  /_$1 [L]
-        RewriteRule ^/favicon.ico  /favicon.ico [L]
-        RewriteRule ^/gsitemap.xml  /gsitemap.xml [L]
-        RewriteRule ^/robots.txt /robots.txt [L]
-        RewriteRule ^/__(.*)  /__$1 [L]
-        RewriteRule .* /index.php    
+    RewriteRule ^/favicon.ico  /favicon.ico [L]
+    RewriteRule ^/gsitemap.xml  /gsitemap.xml [L]
+    RewriteRule ^/robots.txt /robots.txt [L]
+    RewriteRule ^/__(.*)  /__$1 [L]
+    RewriteRule .* /index.php    
 </VirtualHost>

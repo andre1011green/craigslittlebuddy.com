@@ -48,6 +48,8 @@ Also check out the index.php file. You'll see 2 constants there that you'll care
 MAGPIE_CACHE_DIR: where to cache the rss that's fetched from craigslist
 MAGPIE_CACHE_AGE: how long to cache the RSS.
 
+You're gonna want to run some sort of cron job to delete old files from MAGPIE_CACHE_DIR or else your disks
+eventually gonna fill up with old crap
 
 ------------- APACHE CONFIG-----------------
 
